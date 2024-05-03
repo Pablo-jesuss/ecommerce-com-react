@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./home/Home.jsx";
+import Blog from "./blog/Blog.jsx";
 import "./index.css";
 
 import "swiper/css";
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
     ],
   },
