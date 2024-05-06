@@ -10,9 +10,21 @@ const NavItems = () => {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
       setHeaderFixed(true);
+    } else {
+      setHeaderFixed(false);
     }
   });
-  return <div>NavItems</div>;
+  return (
+    <header>
+      <div>
+        <div className="container">
+          <div className="header-top-area">
+            <span>Create Accout</span>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default NavItems;
