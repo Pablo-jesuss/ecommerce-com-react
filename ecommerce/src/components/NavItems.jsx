@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 const NavItems = () => {
@@ -19,7 +20,10 @@ const NavItems = () => {
       <div>
         <div className="container">
           <div className="header-top-area">
-            <span>Create Accout</span>
+            <Link to="/signup" className="lab-btn me-3">
+              <span>Create Accout</span>
+            </Link>
+            <Link to="/login">Log in</Link>
           </div>
         </div>
       </div>
