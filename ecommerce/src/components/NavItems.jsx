@@ -16,14 +16,26 @@ const NavItems = () => {
     }
   });
   return (
-    <header>
-      <div>
+    <header
+      className={`header-section style-4 ${
+        headerFixed ? "header-fixed fadeInUp" : ""
+      }`}
+    >
+      <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
         <div className="container">
           <div className="header-top-area">
             <Link to="/signup" className="lab-btn me-3">
               <span>Create Accout</span>
             </Link>
             <Link to="/login">Log in</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="header-botton">
+        <div className="container">
+          <div className="header-wrapper">
+            <div className="logo-search-acte"></div>
           </div>
         </div>
       </div>
