@@ -36,11 +36,34 @@ const NavItems = () => {
       <div className="header-botton">
         <div className="container">
           <div className="header-wrapper">
+            {/* logo */}
             <div className="logo-search-acte">
               <div className="logo">
                 <Link to={"/"}>
                   <img src={logo} alt="" />
                 </Link>
+              </div>
+            </div>
+            {/* menu */}
+            <div className="menu-area">
+              <div className="menu">
+                <ul>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Shop</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Blog</Link>
+                  </li>
+                  <li>
+                    <Link to="/">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Contact</Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
