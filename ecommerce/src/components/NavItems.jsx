@@ -64,11 +64,15 @@ const NavItems = () => {
                     <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
-
-                <Link to="sign-up" className="lab-btn me-3 d-md-block">
-                  Create Account
-                </Link>
               </div>
+              {/* sign in & log in */}
+              <Link to="/sign-up" className="lab-btn me-3 d-md-block">
+                Create Account
+              </Link>
+
+              <Link to="/login" className="d-none d-md-block">
+                Log In
+              </Link>
             </div>
           </div>
         </div>
