@@ -76,11 +76,17 @@ const NavItems = () => {
 
               {/* menu toggler */}
               <div
+                onClick={() => setMenuToggle(!menuToggle)}
                 className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}
               >
                 <span></span>
                 <span></span>
                 <span></span>
+              </div>
+
+              {/* social toggler */}
+              <div>
+                <i className="icofont-info-square"></i>
               </div>
             </div>
           </div>
