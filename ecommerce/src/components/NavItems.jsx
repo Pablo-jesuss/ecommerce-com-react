@@ -73,6 +73,15 @@ const NavItems = () => {
               <Link to="/login" className="d-none d-md-block">
                 Log In
               </Link>
+
+              {/* menu toggler */}
+              <div
+                className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
