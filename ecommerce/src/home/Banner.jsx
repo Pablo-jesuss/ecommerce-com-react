@@ -20,7 +20,13 @@ const bannerList = [
 ];
 
 const Banner = () => {
-  return <div>Banner</div>;
+  return (
+    <div className="banner-section style-4">
+      <div className="container">
+        <div className="banner-content">{title}</div>
+      </div>
+    </div>
+  );
 };
 
 export default Banner;
