@@ -26,7 +26,8 @@ const Banner = () => {
 
   // search funtionality
   const handleSearch = (e) => {
-    console.log(e.target.value);
+    const searchterm = e.target.value;
+    setSearchInput(searchterm);
   };
   return (
     <div className="banner-section style-4">
