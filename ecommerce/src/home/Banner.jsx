@@ -50,7 +50,19 @@ const Banner = () => {
               value={searchInput}
               onChange={handleSearch}
             />
+            <button type="submit">
+              <i className="icofont-search"></i>
+            </button>
           </form>
+          <p>{desc}</p>
+          <ul className="lab-ul">
+            {searchInput &&
+              filteredProducts.localeCompare((product) => (
+                <li key={i}>
+                  <Link to={`/shop/${product.id}`}>{product.name}</Link>
+                </li>
+              ))}
+          </ul>
         </div>
       </div>
     </div>
