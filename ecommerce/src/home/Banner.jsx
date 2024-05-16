@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import productData from "../products.json";
+import SelectedCategory from "../components/SelectedCategory";
 
 const title = <h2>Search Your One From Thousand of Products</h2>;
 
@@ -42,6 +43,7 @@ const Banner = () => {
         <div className="banner-content">
           {title}
           <form>
+            <SelectedCategory />
             <input
               type="text"
               name="search"
