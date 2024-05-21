@@ -79,13 +79,34 @@ const ProductData = [
 
 const CategoryShowCase = () => {
   const [item, setItems] = useState(ProductData);
+
+  // category baded filtering
+  const filterItem = () => {};
   return (
     <div className="course-section style-3 padding-tb">
+      {/* shapes */}
       <div className="course-shape one">
         <img src="/src/assets/images/shape-img/icon/01.png" alt="" />
       </div>
       <div className="course-shape two">
         <img src="/src/assets/images/shape-img/icon/02.png" alt="" />
+      </div>
+
+      {/* main section  */}
+      <div className="container">
+        {/* section header */}
+        <div className="section-header">
+          <h2 className="title">{title}</h2>
+          <div className="course-filter-group">
+            <ul className="lab-ul">
+              <li onClick={() => filterItem("All")}>All</li>
+              <li onClick={() => filterItem("All")}>Shoes</li>
+              <li onClick={() => filterItem("All")}>Bags</li>
+              <li onClick={() => filterItem("All")}>Phones</li>
+              <li onClick={() => filterItem("All")}>Beauty</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
