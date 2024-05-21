@@ -100,11 +100,28 @@ const CategoryShowCase = () => {
           <div className="course-filter-group">
             <ul className="lab-ul">
               <li onClick={() => filterItem("All")}>All</li>
-              <li onClick={() => filterItem("All")}>Shoes</li>
-              <li onClick={() => filterItem("All")}>Bags</li>
-              <li onClick={() => filterItem("All")}>Phones</li>
-              <li onClick={() => filterItem("All")}>Beauty</li>
+              <li onClick={() => filterItem("Shoes")}>Shoes</li>
+              <li onClick={() => filterItem("Bags")}>Bags</li>
+              <li onClick={() => filterItem("Phones")}>Phones</li>
+              <li onClick={() => filterItem("Beauty")}>Beauty</li>
             </ul>
+          </div>
+        </div>
+
+        {/* section body */}
+        <div className="section-wrapper">
+          <div>
+            {item.map((product) => (
+              <div key={product.id} className="col">
+                <div className="course-item style-4">
+                  <div className="course-inner">
+                    <div className="course-thubm">
+                      <img src={product.imgUrl} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
