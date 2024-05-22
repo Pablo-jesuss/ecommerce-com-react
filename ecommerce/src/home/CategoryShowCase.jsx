@@ -83,7 +83,12 @@ const CategoryShowCase = () => {
   const [item, setItems] = useState(ProductData);
 
   // category baded filtering
-  const filterItem = () => {};
+  const filterItem = (categItem) => {
+    const updateItems = ProductData.filter((curElem) => {
+      return curElem.cate === categItem;
+    });
+    setItems();
+  };
   return (
     <div className="course-section style-3 padding-tb">
       {/* shapes */}
