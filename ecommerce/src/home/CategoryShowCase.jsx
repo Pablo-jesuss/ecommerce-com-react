@@ -117,6 +117,11 @@ const CategoryShowCase = () => {
                   <div className="course-inner">
                     <div className="course-thubm">
                       <img src={product.imgUrl} alt="" />
+                      <div className="course-category">
+                        <div className="course-cate">
+                          <a href="#">{product.cate}</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
