@@ -123,13 +123,22 @@ const CategoryShowCase = () => {
                         <div className="course-cate">
                           <a href="#">{product.cate}</a>
                         </div>
-                        <div className="course-reiew"><Ratting/></div>
+                        <div className="course-reiew">
+                          <Ratting />
+                        </div>
                       </div>
                     </div>
 
                     {/* content */}
                     <div className="course-content">
                       <Link to={`/shop/${product.id}`}>{product.title}</Link>
+                      <div className="course-footer">
+                        <div className="course-author">
+                          <Link to="/" className="ca-name">
+                            {product.brand}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
