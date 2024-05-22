@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Ratting from "../components/Ratting";
 
 const title = "Our Products";
 
@@ -121,6 +122,7 @@ const CategoryShowCase = () => {
                         <div className="course-cate">
                           <a href="#">{product.cate}</a>
                         </div>
+                        <div className="course-reiew">{Ratting}</div>
                       </div>
                     </div>
                   </div>
