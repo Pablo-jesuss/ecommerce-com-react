@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Ratting from "../components/Ratting";
+import { Link } from "react-router-dom";
 
 const title = "Our Products";
 
@@ -122,8 +123,13 @@ const CategoryShowCase = () => {
                         <div className="course-cate">
                           <a href="#">{product.cate}</a>
                         </div>
-                        <div className="course-reiew">{Ratting}</div>
+                        <div className="course-reiew"><Ratting/></div>
                       </div>
+                    </div>
+
+                    {/* content */}
+                    <div className="course-content">
+                      <Link to={`/shop/${product.id}`}>{product.title}</Link>
                     </div>
                   </div>
                 </div>
