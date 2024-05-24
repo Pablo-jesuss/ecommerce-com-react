@@ -8,7 +8,7 @@ const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/01.jpg",
     cate: "Shoes",
-    title: "Nike Premier X",
+    title: "Nike ",
     author: "assets/images/course/author/01.jpg",
     brand: "Nike",
     price: "$199.00",
@@ -17,7 +17,7 @@ const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/02.jpg",
     cate: "Bags",
-    title: "Asthetic Bags",
+    title: "Bags",
     author: "assets/images/course/author/02.jpg",
     brand: "D&J Bags",
     price: "$199.00",
@@ -26,7 +26,7 @@ const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/03.jpg",
     cate: "Phones",
-    title: "iPhone 12",
+    title: "iPhone 13",
     author: "src/assets/images/categoryTab/brand/apple.png",
     brand: "Apple",
     price: "$199.00",
@@ -35,7 +35,7 @@ const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/04.jpg",
     cate: "Bags",
-    title: "Hiking Bag 15 Nh100",
+    title: "Bag 15",
     author: "assets/images/course/author/04.jpg",
     brand: "Gucci",
     price: "$199.00",
@@ -44,7 +44,7 @@ const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/05.jpg",
     cate: "Shoes",
-    title: "Outdoor Sports Shoes",
+    title: "Sports Shoes",
     author: "assets/images/course/author/05.jpg",
     brand: "Nike",
     price: "$199.00",
@@ -53,7 +53,7 @@ const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/06.jpg",
     cate: "Beauty",
-    title: "COSRX Snail Mucin",
+    title: "Perfume",
     author: "assets/images/course/author/06.jpg",
     brand: "Zaara",
     price: "$199.00",

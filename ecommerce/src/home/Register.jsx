@@ -2,7 +2,7 @@ import React from "react";
 
 const subTitle = "Save the Day";
 const title = (
-  <h2>
+  <h2 className="title">
     Join on Day Long Free Workshop for
     <b>
       Advance <span>Mastering</span>
@@ -20,7 +20,7 @@ const Register = () => {
         <div className="row g-4 row-cols-lg-2 row-cols-1 align-items-center">
           <div className="col">
             <div className="section-header">
-              <span className="subTitle">{subTitle}</span>
+              <span className="subtitle">{subTitle}</span>
               {title}
               <p>{desc}</p>
             </div>

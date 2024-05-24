@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import productData from "../products.json";
 import SelectedCategory from "../components/SelectedCategory";
 
@@ -13,7 +14,7 @@ const bannerList = [
   },
   {
     iconName: "icofont-notification",
-    text: "More then 2000 Marchent",
+    text: "More than 2000 Merchants",
   },
   {
     iconName: "icofont-globe",
@@ -23,20 +24,21 @@ const bannerList = [
 
 const Banner = () => {
   const [searchInput, setSearchInput] = useState("");
-  const [filteredProducts, setfilteredProducts] = useState("productData");
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
-  // search funtionality
+  // search functionality
   const handleSearch = (e) => {
-    const searchterm = e.target.value;
-    setSearchInput(searchterm);
+    const searchTerm = e.target.value;
+    setSearchInput(searchTerm);
 
-    // fitlering products based on search
+    // filtering products based on search
     const filtered = productData.filter((product) =>
-      product.name.toLowerCase().includes(searchterm.toLowerCase())
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    setfilteredProducts(filtered);
+    setFilteredProducts(filtered);
   };
+
   return (
     <div className="banner-section style-4">
       <div className="container">
@@ -59,7 +61,7 @@ const Banner = () => {
           <p>{desc}</p>
           <ul className="lab-ul">
             {searchInput &&
-              filteredProducts.localeCompare((product) => (
+              filteredProducts.map((product, i) => (
                 <li key={i}>
                   <Link to={`/shop/${product.id}`}>{product.name}</Link>
                 </li>
