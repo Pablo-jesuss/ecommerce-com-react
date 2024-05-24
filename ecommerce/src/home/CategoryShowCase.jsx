@@ -87,7 +87,7 @@ const CategoryShowCase = () => {
     const updateItems = ProductData.filter((curElem) => {
       return curElem.cate === categItem;
     });
-    setItems();
+    setItems(updateItems);
   };
   return (
     <div className="course-section style-3 padding-tb">
@@ -106,7 +106,7 @@ const CategoryShowCase = () => {
           <h2 className="title">{title}</h2>
           <div className="course-filter-group">
             <ul className="lab-ul">
-              <li onClick={() => filterItem("All")}>All</li>
+              <li onClick={() => setItems(ProductData)}>All</li>
               <li onClick={() => filterItem("Shoes")}>Shoes</li>
               <li onClick={() => filterItem("Bags")}>Bags</li>
               <li onClick={() => filterItem("Phones")}>Phones</li>
