@@ -55,9 +55,6 @@ const NavItems = () => {
                     <Link to="/shop">Shop</Link>
                   </li>
                   <li>
-                    <Link to="/blog">Blog</Link>
-                  </li>
-                  <li>
                     <Link to="/about">About</Link>
                   </li>
                   <li>
