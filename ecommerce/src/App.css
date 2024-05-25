@@ -1,0 +1,21 @@
+.lab-btn {
+  background-color: rgb(1, 25, 243) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-sp {
+  color: white !important;
+}
+
+#windows-ic {
+  background-color: rgb(1, 25, 243) !important;
+}
+
+#sub1 {
+  color: white !important;
+}
+
+#lab-oll li:hover {
+  background-color: rgb(1, 25, 243) !important;
+}

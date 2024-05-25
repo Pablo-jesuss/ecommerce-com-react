@@ -67,7 +67,7 @@ const HomeCategory = () => {
                     </div>
                     {/* content */}
                     <div className="category-content">
-                      <div className="cate-icon">
+                      <div className="cate-icon" id="windows-ic">
                         <i className={val.iconName}></i>
                       </div>
                       <Link to="/shop">
@@ -81,7 +81,7 @@ const HomeCategory = () => {
           </div>
           <div className="text-center mt-5">
             <Link to="/shop" className="lab-btn">
-              <span>{btnText}</span>
+              <span className="btn-sp">{btnText}</span>
             </Link>
           </div>
         </div>

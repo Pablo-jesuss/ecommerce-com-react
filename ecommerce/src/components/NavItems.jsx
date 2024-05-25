@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo/logo.png";
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -39,9 +38,7 @@ const NavItems = () => {
             {/* logo */}
             <div className="logo-search-acte">
               <div className="logo">
-                <Link to={"/"}>
-                  <img src={logo} alt="" />
-                </Link>
+                <h2>Logo</h2>
               </div>
             </div>
             {/* menu */}

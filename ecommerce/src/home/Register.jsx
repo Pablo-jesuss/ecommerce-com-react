@@ -20,7 +20,9 @@ const Register = () => {
         <div className="row g-4 row-cols-lg-2 row-cols-1 align-items-center">
           <div className="col">
             <div className="section-header">
-              <span className="subtitle">{subTitle}</span>
+              <span id="sub1" className="subtitle">
+                {subTitle}
+              </span>
               {title}
               <p>{desc}</p>
             </div>
