@@ -44,7 +44,10 @@ const NavItems = () => {
             {/* menu */}
             <div className="menu-area">
               <div className="menu">
-                <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
+                <ul
+                  id="lab-alu"
+                  className={`lab-ul ${menuToggle ? "active" : ""}`}
+                >
                   <li>
                     <Link to="/">Home</Link>
                   </li>

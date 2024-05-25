@@ -8,7 +8,14 @@
   color: white !important;
 }
 
+#lab-alu li a:hover {
+  color: rgb(20, 9, 175) !important;
+}
 #windows-ic {
+  background-color: rgb(227, 228, 235) !important;
+}
+
+#windows-ic:hover {
   background-color: rgb(1, 25, 243) !important;
 }
 
