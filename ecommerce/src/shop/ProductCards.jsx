@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Ratting from "../components/Ratting";
 
 const ProductCards = ({ GridList, products }) => {
   return (
@@ -15,6 +17,29 @@ const ProductCards = ({ GridList, products }) => {
               <div className="pro-thumb">
                 <img src={product.img} alt="" />
               </div>
+
+              {/* product action links */}
+              <div className="product-action-link">
+                <Link to={`/shop/${product.id}`}>
+                  <i className="icofont-eye"></i>
+                </Link>
+                <a href="#">
+                  <i className="icofont-heart"></i>
+                </a>
+                <Link to="/cart-page">
+                  <i className="icofont-cart-alt"></i>
+                </Link>
+              </div>
+            </div>
+
+            {/* product content */}
+            <div className="product-content">
+              <h5>
+                <Link to={`/shop/${product.id}`}>{product.name}</Link>
+                <p className="productRating">
+                  <Ratting />
+                </p>
+              </h5>
             </div>
           </div>
         </div>
