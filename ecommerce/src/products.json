@@ -377,19 +377,7 @@
     "shipping": 10,
     "quantity": 0
   },
-  {
-    "id": "1d54fd83-83df-42f8-ae2b-f5ef9d4987ea",
-    "category": "Men's Sneaker",
-    "name": "MOVE FEELREADY SPORT TEE",
-    "seller": "Addidas",
-    "price": 14,
-    "stock": 19,
-    "ratings": 3,
-    "ratingsCount": 4041,
-    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ec81fbd781fe4aa3a8cead230019c192_9366/AEROREADY_Designed_2_Move_Feelready_Sport_Tee_Burgundy_H30268_21_model.jpg",
-    "shipping": 5,
-    "quantity": 0
-  },
+
   {
     "id": "1ce97e0e-3611-4406-8788-7b413640f59e",
     "category": "Men's Sneaker",

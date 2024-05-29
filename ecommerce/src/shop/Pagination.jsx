@@ -6,15 +6,46 @@ const Pagination = ({
   paginate,
   activePage,
 }) => {
-  const pageNumber = [];
+  const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalProducts / productsPerPage); i++) {
-    pageNumber.push(i);
+    pageNumbers.push(i);
   }
   return (
-    <ul>
-      {pageNumber.map((number) => (
-        <li key={number}></li>
+    <ul className="default-pagination lab-ul">
+      <li>
+        <a
+          href="#"
+          onClick={() => {
+            if (activePage < pageNumbers.length) {
+              paginate(activePage - 1);
+            }
+          }}
+        >
+          <i className="icofont-rounded-left"></i>
+        </a>
+      </li>
+      {pageNumbers.map((number) => (
+        <li
+          key={number}
+          className={`page-item ${number === activePage ? "bg-warning" : ""}`}
+        >
+          <button onClick={() => paginate(number)} className="bg-transparent">
+            {number}
+          </button>
+        </li>
       ))}
+      <li>
+        <a
+          href="#"
+          onClick={() => {
+            if (activePage < pageNumbers.length) {
+              paginate(activePage + 1);
+            }
+          }}
+        >
+          <i className="icofont-rounded-right"></i>
+        </a>
+      </li>
     </ul>
   );
 };
