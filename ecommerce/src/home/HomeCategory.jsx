@@ -10,37 +10,37 @@ const categoryList = [
     imgUrl: "src/assets/images/category/01.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
-    title: "DSLR Camera",
+    title: "Câmera",
   },
   {
     imgUrl: "src/assets/images/category/02.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
-    title: "Shoes",
+    title: "Tênis",
   },
   {
     imgUrl: "src/assets/images/category/03.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
-    title: "Photography",
+    title: "Fotografia",
   },
   {
     imgUrl: "src/assets/images/category/04.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
-    title: "Formal Dress",
+    title: "Roupa formal",
   },
   {
     imgUrl: "src/assets/images/category/05.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
-    title: "Colorful Bags",
+    title: "Bolsa",
   },
   {
     imgUrl: "src/assets/images/category/06.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
-    title: "Home Decor",
+    title: "Decoração de casa",
   },
 ];
 
