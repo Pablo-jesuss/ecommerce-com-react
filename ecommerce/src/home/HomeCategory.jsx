@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const subTitle = "Choose Any Products";
-const title = "Buy Everything with Us";
-const btnText = "Get Started Now";
+const subTitle = "Escolha qualquer produto";
+const title = "Compre tudo conosco";
+const btnText = "Comece agora";
 
 const categoryList = [
   {

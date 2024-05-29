@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const btnText = "Sign up for Free";
-const title = "Shop Anytime, Anywhere";
+const btnText = "Inscreva-se gratuitamente";
+const title = "Compre a qualquer hora, em qualquer lugar";
 const desc =
-  "Take shop on your any device with our app & learn all time what you want. Just download & install & start to learn";
+  "Faça compras em qualquer dispositivo com nosso aplicativo e saiba o que quiser o tempo todo. Basta baixar e instalar e começar a aprender.";
 
 const AppSection = () => {
   return (

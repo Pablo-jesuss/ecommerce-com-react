@@ -1,10 +1,10 @@
 import React from "react";
 
-const title = "About ShopCart";
+const title = "Sobre ShopCart";
 const desc =
-  "Eduaid theme number one world class university in the world There are student are studing always in this university for all time.";
-const ItemTitle = "Categories";
-const quickTitle = "Quick Links";
+  "Lorem ipsum dolor sit amet, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+const ItemTitle = "Categorias";
+const quickTitle = "Links";
 const tweetTitle = "Recent Tweets";
 
 const addressList = [

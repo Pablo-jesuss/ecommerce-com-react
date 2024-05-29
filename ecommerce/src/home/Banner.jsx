@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import productData from "../products.json";
 import SelectedCategory from "../components/SelectedCategory";
 
-const title = <h2>Search Your One From Thousand of Products</h2>;
+const title = <h2>Pesquise o seu entre milhares de produtos</h2>;
 
-const desc = "We have the largest collection of products";
+const desc = "Temos a maior coleção de produtos";
 
 const bannerList = [
   {
@@ -50,7 +50,7 @@ const Banner = () => {
               type="text"
               name="search"
               id="search"
-              placeholder="Search your product"
+              placeholder="Pesquise seu produto"
               value={searchInput}
               onChange={handleSearch}
             />

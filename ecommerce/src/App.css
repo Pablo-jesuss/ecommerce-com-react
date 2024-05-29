@@ -33,6 +33,11 @@
   color: #fff;
 }
 
+#log-in:hover {
+  color: rgb(20, 9, 175);
+  font-size: 18px;
+}
+
 .lab-btn {
   background-color: rgb(1, 25, 243) !important;
   color: white !important;

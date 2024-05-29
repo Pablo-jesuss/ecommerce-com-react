@@ -27,7 +27,7 @@ const NavItems = () => {
             <Link to="/signup" className="lab-btn me-3">
               <span>Create Accout</span>
             </Link>
-            <Link to="/login">Log in</Link>
+            <Link to="/login">Login</Link>
           </div>
         </div>
       </div>
@@ -64,11 +64,11 @@ const NavItems = () => {
               </div>
               {/* sign in & log in */}
               <Link to="/sign-up" className="lab-btn me-3 d-md-block">
-                Create Account
+                Criar uma conta
               </Link>
 
-              <Link to="/login" className="d-none d-md-block">
-                Log In
+              <Link to="/login" className="d-none d-md-block" id="log-in">
+                Login
               </Link>
 
               {/* menu toggler */}

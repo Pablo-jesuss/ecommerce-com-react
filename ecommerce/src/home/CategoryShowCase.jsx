@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Ratting from "../components/Ratting";
 import { Link } from "react-router-dom";
 
-const title = "Our Products";
+const title = "Pesquise seu produto";
 
 const ProductData = [
   {

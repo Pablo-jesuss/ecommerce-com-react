@@ -3,15 +3,12 @@ import React from "react";
 const subTitle = "Save the Day";
 const title = (
   <h2 className="title">
-    Join on Day Long Free Workshop for
-    <b>
-      Advance <span>Mastering</span>
-    </b>
-    on Sales
+    Participe do workshop gratuito de um dia inteiro
+    <b> de vendas</b>
   </h2>
 );
 
-const desc = "Limited Time Offer! hurry Up";
+const desc = "Tempo limitado de oferta! se apresse";
 
 const Register = () => {
   return (
@@ -29,7 +26,7 @@ const Register = () => {
           </div>
           <div className="col">
             <div className="section-wrapper">
-              <h4>Register Now</h4>
+              <h4>Registrar agora</h4>
               <form className="register-form">
                 <input
                   type="text"
@@ -53,7 +50,7 @@ const Register = () => {
                 />
 
                 <button type="submit" className="lab-btn">
-                  Register Now
+                  Registrar agora
                 </button>
               </form>
             </div>

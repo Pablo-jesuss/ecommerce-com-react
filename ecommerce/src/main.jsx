@@ -18,6 +18,7 @@ import "././assets/css/style.min.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Shop from "./shop/Shop.jsx";
+import AboutUs from "./home/AboutUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/about",
+        element: <AboutUs />,
       },
     ],
   },

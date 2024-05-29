@@ -2,27 +2,27 @@ import React from "react";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
 
-const subTitle = "Why Choose Us";
-const title = "Become a Marchant";
+const subTitle = "Porque escolher-nos";
+const title = "Torne-se um Marchante";
 const desc =
-  "Take courses on your any device with our app & learn all about business what you want. Just download & install & start to learn";
-const btnText = "Apply Now";
+  "Faça cursos em qualquer dispositivo com nosso aplicativo e aprenda tudo sobre negócios que você deseja. Basta baixar e instalar e começar a aprender";
+const btnText = "Aplique agora";
 
 const countList = [
   {
     iconName: "icofont-users-alt-4",
     count: "12600",
-    text: "Marchant Enrolled",
+    text: "Marchante inscrito",
   },
   {
     iconName: "icofont-graduate-alt",
     count: "30",
-    text: "Certified Courses",
+    text: "Curso Certificado",
   },
   {
     iconName: "icofont-notification",
     count: "100",
-    text: "Rewards and GitCards",
+    text: "Recompensas e GitCards",
   },
 ];
 
