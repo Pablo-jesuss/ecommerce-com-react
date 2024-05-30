@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const desc =
   "Lorem Ipsum is simply dummy text an unknown printer has been the industry's standard dummy text ever since ";
 
 const ProductDisplay = ({ item }) => {
-  const { name, id, price, seller, ratingsCount, quantity } = item;
+  const { name, id, price, seller, ratingsCount, quantity, img } = item;
 
   const [prequantity, setQuantity] = useState(quantity);
   const [coupon, setCoupon] = useState("");
@@ -29,6 +30,40 @@ const ProductDisplay = ({ item }) => {
     setQuantity(prequantity + 1);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const product = {
+      id: id,
+      img: img,
+      name: name,
+      price: price,
+      quantity: prequantity,
+      size: size,
+      color: color,
+      coupon: coupon,
+    };
+
+    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existingProductIndex = existingCart.findIndex(
+      (item) => item.id === id
+    );
+    if (existingProductIndex !== -1) {
+      existingCart[existingProductIndex].quantity += prequantity;
+    } else {
+      existingCart.push(product);
+    }
+
+    // update local storage
+    localStorage.setItem("cart", JSON.stringify(existingCart));
+
+    // reset form fields
+    setQuantity(1);
+    setSize("Select Size");
+    setColor("Select Color");
+    setCoupon("");
+  };
+
   return (
     <div>
       <div>
@@ -48,7 +83,7 @@ const ProductDisplay = ({ item }) => {
 
       {/* cart components */}
       <div>
-        <form>
+        <form onSubmit={handleSubmit}>
           {/* size */}
           <div className="select-product size">
             <select value={size} onChange={handleSizeChange}>
@@ -89,6 +124,28 @@ const ProductDisplay = ({ item }) => {
               +
             </div>
           </div>
+          {/* coupon field */}
+          <div className="discount-code mb-2">
+            <input
+              type="text"
+              placeholder="Insira o código de desconto"
+              onChange={(e) => setCoupon(e.target.value)}
+            />
+          </div>
+
+          {/* btn section */}
+          <button type="submit" className="lab-btn">
+            <span>
+              Adicionar ao Carrinho <i class="icofont-shopping-cart"></i>
+            </span>
+          </button>
+
+          {/*  */}
+          <Link to="/cart-page" className="lab-btn bg-primary">
+            <span>
+              Carrinho <i class="icofont-shopping-cart"></i>
+            </span>
+          </Link>
         </form>
       </div>
     </div>
