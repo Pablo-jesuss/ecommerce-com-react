@@ -153,6 +153,7 @@ footer.style-2
   display: flex;
   flex-wrap: wrap;
 }
+
 .comment-respond .add-comment .comment-form p.comment-form-cookies-consent {
   flex-wrap: nowrap;
 }

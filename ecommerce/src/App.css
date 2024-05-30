@@ -38,6 +38,10 @@
   font-size: 18px;
 }
 
+.logo h2 {
+  color: blue;
+}
+
 .lab-btn {
   background-color: rgb(1, 25, 243) !important;
   color: white !important;

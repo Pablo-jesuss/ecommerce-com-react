@@ -5,6 +5,8 @@ import ProductCards from "./ProductCards";
 import Pagination from "./Pagination";
 import Search from "./Search";
 import ShopCategory from "./ShopCategory";
+import PopularPost from "./PopularPost";
+import Tags from "./Tags";
 
 const ShowResults = "Showing 01 - 12 of 139 Results";
 
@@ -94,6 +96,8 @@ const Shop = () => {
                   menuItems={menuItems}
                   selectedCategory={selectedCategory}
                 />
+                <PopularPost />
+                <Tags />
               </aside>
             </div>
           </div>
