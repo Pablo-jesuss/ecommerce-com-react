@@ -7,7 +7,7 @@ const title = "Pesquise seu produto";
 const ProductData = [
   {
     imgUrl: "src/assets/images/categoryTab/01.jpg",
-    cate: "Shoes",
+    cate: "Tênis",
     title: "Nike ",
     author: "assets/images/course/author/01.jpg",
     brand: "Nike",
@@ -16,7 +16,7 @@ const ProductData = [
   },
   {
     imgUrl: "src/assets/images/categoryTab/02.jpg",
-    cate: "Bags",
+    cate: "Bolsa",
     title: "Bags",
     author: "assets/images/course/author/02.jpg",
     brand: "Bags",
@@ -34,7 +34,7 @@ const ProductData = [
   },
   {
     imgUrl: "src/assets/images/categoryTab/04.jpg",
-    cate: "Bags",
+    cate: "Mochila",
     title: "Bag 15",
     author: "assets/images/course/author/04.jpg",
     brand: "Exe",
@@ -43,7 +43,7 @@ const ProductData = [
   },
   {
     imgUrl: "src/assets/images/categoryTab/05.jpg",
-    cate: "Shoes",
+    cate: "Tênis",
     title: "Sports Shoes",
     author: "assets/images/course/author/05.jpg",
     brand: "Nike",
@@ -52,7 +52,7 @@ const ProductData = [
   },
   {
     imgUrl: "src/assets/images/categoryTab/06.jpg",
-    cate: "Beauty",
+    cate: "Beleza",
     title: "Perfume",
     author: "assets/images/course/author/06.jpg",
     brand: "Zaara",
@@ -61,7 +61,7 @@ const ProductData = [
   },
   {
     imgUrl: "src/assets/images/categoryTab/07.jpg",
-    cate: "Bags",
+    cate: "Bolsa",
     title: "Look Less Chanel Bag ",
     author: "assets/images/course/author/01.jpg",
     brand: "Gucci",
@@ -70,7 +70,7 @@ const ProductData = [
   },
   {
     imgUrl: "src/assets/images/categoryTab/08.jpg",
-    cate: "Shoes",
+    cate: "Tênis",
     title: "Casual Sneakers",
     author: "assets/images/course/author/02.jpg",
     brand: "Adidas",
@@ -107,22 +107,22 @@ const CategoryShowCase = () => {
           <div className="course-filter-group">
             <ul id="lab-oll" className="lab-ul">
               <li onClick={() => setItems(ProductData)}>All</li>
-              <li onClick={() => filterItem("Shoes")}>Shoes</li>
-              <li onClick={() => filterItem("Bags")}>Bags</li>
+              <li onClick={() => filterItem("Shoes")}>Tênis</li>
+              <li onClick={() => filterItem("Bags")}>Bolsa</li>
               <li onClick={() => filterItem("Phones")}>Phones</li>
-              <li onClick={() => filterItem("Beauty")}>Beauty</li>
+              <li onClick={() => filterItem("Beauty")}>Beleza</li>
             </ul>
           </div>
         </div>
 
         {/* section body */}
         <div className="section-wrapper">
-          <div className="row g-4 justify-content-center row-cols-x1-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+          <div className="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
             {item.map((product) => (
               <div key={product.id} className="col">
                 <div className="course-item style-4">
                   <div className="course-inner">
-                    <div className="course-thubm">
+                    <div className="course-thumb">
                       <img src={product.imgUrl} alt="" />
                       <div className="course-category">
                         <div className="course-cate">
