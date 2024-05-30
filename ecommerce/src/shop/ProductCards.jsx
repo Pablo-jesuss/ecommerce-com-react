@@ -40,7 +40,7 @@ const ProductCards = ({ GridList, products }) => {
               <p className="productRating">
                 <Ratting />
               </p>
-              <h6>${product.price}</h6>
+              <h6>R$ {product.price}</h6>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ const ProductCards = ({ GridList, products }) => {
               <p className="productRating">
                 <Ratting />
               </p>
-              <h6>${product.price}</h6>
+              <h6>R$ {product.price}</h6>
             </div>
           </div>
         </div>

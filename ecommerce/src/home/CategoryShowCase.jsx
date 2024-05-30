@@ -11,7 +11,7 @@ const ProductData = [
     title: "Nike ",
     author: "assets/images/course/author/01.jpg",
     brand: "Nike",
-    price: "$199.00",
+    price: "R$ 1.000",
     id: 1,
   },
   {
@@ -20,7 +20,7 @@ const ProductData = [
     title: "Bags",
     author: "assets/images/course/author/02.jpg",
     brand: "Bags",
-    price: "$199.00",
+    price: "R$ 199.00",
     id: 2,
   },
   {
@@ -29,7 +29,7 @@ const ProductData = [
     title: "iPhone 13",
     author: "src/assets/images/categoryTab/brand/apple.png",
     brand: "Apple",
-    price: "$199.00",
+    price: "R$ 4.000",
     id: 3,
   },
   {
@@ -38,7 +38,7 @@ const ProductData = [
     title: "Bag 15",
     author: "assets/images/course/author/04.jpg",
     brand: "Exe",
-    price: "$199.00",
+    price: "R$ 199.00",
     id: 4,
   },
   {
@@ -47,7 +47,7 @@ const ProductData = [
     title: "Sports Shoes",
     author: "assets/images/course/author/05.jpg",
     brand: "Nike",
-    price: "$199.00",
+    price: "R$ 199.00",
     id: 5,
   },
   {
@@ -56,7 +56,7 @@ const ProductData = [
     title: "Perfume",
     author: "assets/images/course/author/06.jpg",
     brand: "Zaara",
-    price: "$199.00",
+    price: "R$ 199.00",
     id: 6,
   },
   {
@@ -65,7 +65,7 @@ const ProductData = [
     title: "Look Less Chanel Bag ",
     author: "assets/images/course/author/01.jpg",
     brand: "Gucci",
-    price: "$199.00",
+    price: "R$ 199.00",
     id: 7,
   },
   {
@@ -74,7 +74,7 @@ const ProductData = [
     title: "Casual Sneakers",
     author: "assets/images/course/author/02.jpg",
     brand: "Adidas",
-    price: "$199.00",
+    price: "R$ 199.00",
     id: 8,
   },
 ];
@@ -107,10 +107,10 @@ const CategoryShowCase = () => {
           <div className="course-filter-group">
             <ul id="lab-oll" className="lab-ul">
               <li onClick={() => setItems(ProductData)}>All</li>
-              <li onClick={() => filterItem("Shoes")}>Tênis</li>
-              <li onClick={() => filterItem("Bags")}>Bolsa</li>
+              <li onClick={() => filterItem("Tênis")}>Tênis</li>
+              <li onClick={() => filterItem("Bolsa")}>Bolsa</li>
               <li onClick={() => filterItem("Phones")}>Phones</li>
-              <li onClick={() => filterItem("Beauty")}>Beleza</li>
+              <li onClick={() => filterItem("Beleza")}>Beleza</li>
             </ul>
           </div>
         </div>
