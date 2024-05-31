@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const reviwtitle = "Add a Review";
+const reviewtitle = "Add a Review";
 
 let ReviewList = [
   {
@@ -34,7 +34,8 @@ let ReviewList = [
 ];
 
 const Review = () => {
-  const [reviewShow, setReviewShop] = useState(true);
+  const [reviewShow, setReviewShow] = useState(true); // Corrigido aqui
+
   return (
     <>
       <ul
@@ -42,10 +43,14 @@ const Review = () => {
           reviewShow ? "RevActive" : "DescActive"
         }`}
       >
-        <li className="desc" onClick={() => setReviewShop(!reviewShow)}>
+        <li className="desc" onClick={() => setReviewShow(false)}>
+          {" "}
+          {/* Corrigido aqui */}
           Descrição
         </li>
-        <li className="rev" onClick={() => setReviewShop(!reviewShow)}>
+        <li className="rev" onClick={() => setReviewShow(true)}>
+          {" "}
+          {/* Corrigido aqui */}
           Análise
         </li>
       </ul>
@@ -53,31 +58,38 @@ const Review = () => {
       {/* desc & review content */}
       <div
         className={`review-content ${
-          reviewShow ? "review-content-shop" : "description-show"
+          reviewShow ? "review-content-show" : "description-show"
         }`}
       >
-        <div className="review-showing">
-          <ul className="content lab-ul">
-            {ReviewList.map((review, i) => (
-              <li key={i}>
-                <div className="post-thumb">
-                  <img src={review.imgUrl} alt="" />
-                </div>
-                <div className="post-content">
-                  <div className="entry-meta">
-                    <div className="posted-on">
-                      <a href="#">{review.name}</a>
-                      <p>{review.date}</p>
+        {reviewShow ? (
+          <div className="review-showing">
+            <ul className="content lab-ul">
+              {ReviewList.map((review, i) => (
+                <li key={i}>
+                  <div className="post-thumb">
+                    <img src={review.imgUrl} alt={review.imgAlt} />{" "}
+                    {/* Corrigido aqui */}
+                  </div>
+                  <div className="post-content">
+                    <div className="entry-meta">
+                      <div className="posted-on">
+                        <a href="#">{review.name}</a>
+                        <p>{review.date}</p>
+                      </div>
+                    </div>
+                    <div className="entry-content">
+                      <p>{review.desc}</p> {/* Adicionado aqui */}
                     </div>
                   </div>
-                </div>
-                <div className="entry-content"></div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* description */}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div className="description">
+            <p>Adicione a descrição aqui...</p> {/* Conteúdo da descrição */}
+          </div>
+        )}
       </div>
     </>
   );
