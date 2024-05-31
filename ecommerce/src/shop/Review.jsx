@@ -49,6 +49,36 @@ const Review = () => {
           Análise
         </li>
       </ul>
+
+      {/* desc & review content */}
+      <div
+        className={`review-content ${
+          reviewShow ? "review-content-shop" : "description-show"
+        }`}
+      >
+        <div className="review-showing">
+          <ul className="content lab-ul">
+            {ReviewList.map((review, i) => (
+              <li key={i}>
+                <div className="post-thumb">
+                  <img src={review.imgUrl} alt="" />
+                </div>
+                <div className="post-content">
+                  <div className="entry-meta">
+                    <div className="posted-on">
+                      <a href="#">{review.name}</a>
+                      <p>{review.date}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="entry-content"></div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* description */}
+      </div>
     </>
   );
 };
