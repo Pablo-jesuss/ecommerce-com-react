@@ -34,7 +34,7 @@ let ReviewList = [
 ];
 
 const Review = () => {
-  const [reviewShow, setReviewShow] = useState(true); // Corrigido aqui
+  const [reviewShow, setReviewShow] = useState(true);
 
   return (
     <>
@@ -45,12 +45,10 @@ const Review = () => {
       >
         <li className="desc" onClick={() => setReviewShow(false)}>
           {" "}
-          {/* Corrigido aqui */}
           Descrição
         </li>
         <li className="rev" onClick={() => setReviewShow(true)}>
           {" "}
-          {/* Corrigido aqui */}
           Análise
         </li>
       </ul>
@@ -67,8 +65,7 @@ const Review = () => {
               {ReviewList.map((review, i) => (
                 <li key={i}>
                   <div className="post-thumb">
-                    <img src={review.imgUrl} alt={review.imgAlt} />{" "}
-                    {/* Corrigido aqui */}
+                    <img src={review.imgUrl} alt={review.imgAlt} />
                   </div>
                   <div className="post-content">
                     <div className="entry-meta">
@@ -78,16 +75,25 @@ const Review = () => {
                       </div>
                     </div>
                     <div className="entry-content">
-                      <p>{review.desc}</p> {/* Adicionado aqui */}
+                      <p>{review.desc}</p>
                     </div>
                   </div>
                 </li>
               ))}
             </ul>
+
+            {/* add review field */}
+            <div className="client-review">
+              <div className="review-form">
+                <div className="review-title">
+                  <h5>{reviewtitle}</h5>
+                </div>
+              </div>
+            </div>
           </div>
         ) : (
           <div className="description">
-            <p>Adicione a descrição aqui...</p> {/* Conteúdo da descrição */}
+            <p>Adicione a descrição aqui...</p>
           </div>
         )}
       </div>
