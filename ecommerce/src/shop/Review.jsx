@@ -151,8 +151,43 @@ const Review = () => {
                 <img src="/src/assets/images/shop/03.jpg" alt="" />
               </div>
               <div className="post-content">
-                <ul></ul>
+                <ul className="lab-ul">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    veniam accusantium vitae amet.
+                  </li>
+                  <li>
+                    sit amet consectetur adipisicing elit. Ut veniam accusantium
+                    vitae amet.
+                  </li>
+                  <li>
+                    ipsum dolor consectetur adipisicing elit. Ut veniam
+                    accusantium vitae amet.
+                  </li>
+                  <li>
+                    Amet consectetur adipisicing elit. Ut veniam accusantium
+                    vitae amet.
+                  </li>
+                  <li>
+                    Consectetur adipisicing elit. Ut veniam accusantium vitae
+                    amet.
+                  </li>
+                </ul>
               </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                laudantium ratione error reprehenderit deserunt sed
+                exercitationem laborum facere. Recusandae non nostrum magni
+                veritatis soluta id harum vel adipisci ratione. Officia! Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Autem in
+                doloribus vitae iste consequatur iusto, sunt laborum enim,
+                exercitationem tenetur voluptatibus quam reiciendis tempore. Id
+                consectetur adipisci cumque dolor. Mollitia! Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Porro rem doloribus iure
+                sed excepturi! Aperiam necessitatibus pariatur, accusamus illum
+                velit debitis error. Quam praesentium ad molestias architecto
+                error odit at.
+              </p>
             </div>
           </div>
         )}
