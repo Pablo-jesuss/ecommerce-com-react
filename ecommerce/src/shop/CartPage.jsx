@@ -8,6 +8,17 @@ const CartPage = () => {
     const storedCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     setcartItems(storedCartItems);
   }, []);
+
+  // calculate prices
+  const calculateTotalPrice = (item) => {
+    return item.price * item.quantity;
+  };
+
+  // handle quantity increase
+  const handleIncrease = (item) => {
+    item.quantity += 1;
+    setcartItems([...cartItems]);
+  };
   return <div>CartPage</div>;
 };
 
