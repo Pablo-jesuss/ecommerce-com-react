@@ -147,7 +147,12 @@ const Review = () => {
             </p>
 
             <div className="post-item">
-              <div className="post-thumb"></div>
+              <div className="post-thumb">
+                <img src="/src/assets/images/shop/03.jpg" alt="" />
+              </div>
+              <div className="post-content">
+                <ul></ul>
+              </div>
             </div>
           </div>
         )}
