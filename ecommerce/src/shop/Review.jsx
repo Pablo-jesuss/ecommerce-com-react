@@ -50,7 +50,7 @@ const Review = () => {
         </li>
         <li className="rev" onClick={() => setReviewShow(true)}>
           {" "}
-          Análise
+          Reviews 4
         </li>
       </ul>
 
@@ -132,7 +132,23 @@ const Review = () => {
           </div>
         ) : (
           <div className="description">
-            <p>Adicione a descrição aqui...</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+              laudantium ratione error reprehenderit deserunt sed exercitationem
+              laborum facere. Recusandae non nostrum magni veritatis soluta id
+              harum vel adipisci ratione. Officia! Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Autem in doloribus vitae iste
+              consequatur iusto, sunt laborum enim, exercitationem tenetur
+              voluptatibus quam reiciendis tempore. Id consectetur adipisci
+              cumque dolor. Mollitia! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Porro rem doloribus iure sed excepturi! Aperiam
+              necessitatibus pariatur, accusamus illum velit debitis error. Quam
+              praesentium ad molestias architecto error odit at.
+            </p>
+
+            <div className="post-item">
+              <div className="post-thumb"></div>
+            </div>
           </div>
         )}
       </div>
