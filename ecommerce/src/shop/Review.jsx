@@ -69,11 +69,12 @@ const Review = () => {
                     <img src={review.imgUrl} alt={review.imgAlt} />
                   </div>
                   <div className="post-content">
-                    <div className="entry-meta">
-                      <div className="posted-on">
+                    <div className="entry-meta ratting">
+                      <div className="posted-on ">
                         <a href="#">{review.name}</a>
                         <p>{review.date}</p>
                       </div>
+                      <Ratting />
                     </div>
                     <div className="entry-content">
                       <p>{review.desc}</p>
@@ -108,8 +109,8 @@ const Review = () => {
                     />
                   </div>
                   <div className="col-md-4 col-12">
-                    <div className="rating">
-                      <span className="me-1">Sua Avaliação </span>
+                    <div className="ratting">
+                      <span className="me-2">Sua Avaliação </span>
                       <Ratting />
                     </div>
                   </div>
