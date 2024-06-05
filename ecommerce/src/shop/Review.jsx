@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Ratting from "../components/Ratting";
 
 const reviewtitle = "Add a Review";
 
@@ -88,6 +89,44 @@ const Review = () => {
                 <div className="review-title">
                   <h5>{reviewtitle}</h5>
                 </div>
+
+                <form action="action" className="row">
+                  <div className="col-md-4 col-12">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Nome Completo *"
+                    />
+                  </div>
+                  <div className="col-md-4 col-12">
+                    <input
+                      type="email"
+                      name="email"
+                      id="name"
+                      placeholder="Seu email *"
+                    />
+                  </div>
+                  <div className="col-md-4 col-12">
+                    <div className="rating">
+                      <span className="me-1">Sua Avaliação </span>
+                      <Ratting />
+                    </div>
+                  </div>
+                  <div className="col-md-12 col-12">
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="8"
+                      placeholder="Digite aqui a mensagem"
+                    ></textarea>
+                  </div>
+                  <div className="col-12">
+                    <button type="submit" className="default-button">
+                      <span>Enviar revisão</span>
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
