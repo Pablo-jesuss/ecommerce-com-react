@@ -58,7 +58,24 @@ const CartPage = () => {
   const orderTotal = cartSubtotal;
   return (
     <div>
-      <PageHeader />
+      <PageHeader title={"Carrinho"} curPage={"Cart Page"} />
+
+      <div className="shop-cart padding-tb">
+        <div className="container">
+          <div className="section-wrapper">
+            {/* cart top */}
+            <div className="cart-top">
+              <table>
+                <thead>
+                  <tr>
+                    <th className="cat-product">Produtos</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
