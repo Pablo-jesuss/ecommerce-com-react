@@ -94,7 +94,26 @@ const CartPage = () => {
 
                       <td className="cat-price">R$ {item.price}</td>
                       <td className="cat-quantity">
-                        <div className="cart-plus-minus"></div>
+                        <div className="cart-plus-minus">
+                          <div
+                            className="dec qtybutton"
+                            onClick={() => handleDecrease(item)}
+                          >
+                            -
+                          </div>
+                          <input
+                            type="text"
+                            className="cart-plus-minus-box"
+                            name="qtybutton"
+                            value={item.quantity}
+                          />
+                          <div
+                            className="inc qtybutton"
+                            onClick={() => handleIncrease(item)}
+                          >
+                            +
+                          </div>
+                        </div>
                       </td>
                     </tr>
                   ))}
