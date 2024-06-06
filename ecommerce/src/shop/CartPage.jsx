@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PageHeader from "../components/PageHeader";
 
 const CartPage = () => {
   const [cartItems, setcartItems] = useState([]);
@@ -47,7 +48,19 @@ const CartPage = () => {
   const updateLocalStorage = (cart) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   };
-  return <div>CartPage</div>;
+
+  // cart subtotal
+  const cartSubtotal = cartItems.reduce((total, item) => {
+    return total + calculateTotalPrice(item);
+  }, 0);
+
+  // order total
+  const orderTotal = cartSubtotal;
+  return (
+    <div>
+      <PageHeader />
+    </div>
+  );
 };
 
 export default CartPage;
