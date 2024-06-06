@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PageHeader from "../components/PageHeader";
+import { Link } from "react-router-dom";
 
 const CartPage = () => {
   const [cartItems, setcartItems] = useState([]);
@@ -69,10 +70,39 @@ const CartPage = () => {
                 <thead>
                   <tr>
                     <th className="cat-product">Produtos</th>
+                    <th className="cat-price">Preços</th>
+                    <th className="cat-quantity">Quantidades</th>
+                    <th className="cat-toprice">Total</th>
+                    <th className="cat-edit">Editar</th>
                   </tr>
                 </thead>
+
+                {/* table body */}
+                <tbody>
+                  {cartItems.map((item, indx) => (
+                    <tr key={indx}>
+                      <td className="product-item cat-product">
+                        <div className="p-thumb">
+                          <Link to="/shop">
+                            <img src={item.img} alt="" />
+                          </Link>
+                        </div>
+                        <div className="p-content">
+                          <Link to="/shop">{item.name}</Link>
+                        </div>
+                      </td>
+
+                      <td className="cat-price">R$ {item.price}</td>
+                      <td className="cat-quantity">
+                        <div className="cart-plus-minus"></div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
               </table>
             </div>
+
+            {/* --- cart top ends... --- */}
           </div>
         </div>
       </div>
