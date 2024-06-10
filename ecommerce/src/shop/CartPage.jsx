@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PageHeader from "../components/PageHeader";
 import { Link } from "react-router-dom";
+import delImgUrl from "../assets/images/shop/del.png";
 
 const CartPage = () => {
   const [cartItems, setcartItems] = useState([]);
@@ -118,6 +119,11 @@ const CartPage = () => {
                       <td className="cart-toprice">
                         R$ {calculateTotalPrice(item)}
                       </td>
+                      <td className="cat-edit">
+                        <a href="#" onClick={() => handleRemoveItem(item)}>
+                          <img src={delImgUrl} alt="" />
+                        </a>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -125,6 +131,28 @@ const CartPage = () => {
             </div>
 
             {/* --- cart top ends... --- */}
+            {/* cart bottom */}
+            <div className="cart-bottom">
+              {/* checkout box */}
+              <div className="cart-checkout-box">
+                <form className="coupon">
+                  <input
+                    className="cart-page-input-text"
+                    type="text"
+                    name="coupon"
+                    id="coupon"
+                    placeholder="Código do cupom ...."
+                  />
+                  <input type="submit" value="Aplicar cupom" />
+                </form>
+
+                <form className="cart-checkout">
+                  <input type="submit" value="Atualizar carrinho" />
+                </form>
+              </div>
+
+              {/* --------- checkot box end ---------- */}
+            </div>
           </div>
         </div>
       </div>
