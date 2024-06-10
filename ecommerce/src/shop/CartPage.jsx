@@ -115,6 +115,9 @@ const CartPage = () => {
                           </div>
                         </div>
                       </td>
+                      <td className="cart-toprice">
+                        R$ {calculateTotalPrice(item)}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
