@@ -148,10 +148,50 @@ const CartPage = () => {
 
                 <form className="cart-checkout">
                   <input type="submit" value="Atualizar carrinho" />
+                  <div>Página de checkout</div>
                 </form>
               </div>
 
               {/* --------- checkot box end ---------- */}
+
+              {/* shopping box */}
+              <div className="shiping-box">
+                <div className="row">
+                  <div className="col-md-6 col-12">
+                    <div className="calculate-shiping">
+                      <h3>Calcular Frete</h3>
+                      <div className="outline-select">
+                        <select>
+                          <option value="uk">Argentina</option>
+                          <option value="bd">Brasil</option>
+                        </select>
+                        <span className="select-icon">
+                          <i className="icofont-rounded-down"></i>
+                        </span>
+                      </div>
+
+                      <div className="outline-select shipping-select">
+                        <select>
+                          <option value="uk">Buenos Aires</option>
+                          <option value="bd">Rio de Janeiro</option>
+                        </select>
+                        <span className="select-icon">
+                          <i className="icofont-rounded-down"></i>
+                        </span>
+                        <input
+                          type="text"
+                          name="postalCode"
+                          id="postalCode"
+                          placeholder="CEP *"
+                          className="cart-page-input-text"
+                        />
+                        <button type="submit">Atualizar endereço</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-12">Right Side</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
