@@ -189,7 +189,19 @@ const CartPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-12">Right Side</div>
+                  <div className="col-md-6 col-12">
+                    <div className="cart-overview">
+                      <h3>Produtos do Carrinho</h3>
+                      <ul className="lab-ul">
+                        <li>
+                          <span className="pull-left">
+                            Subtotal do Carrinho
+                          </span>
+                          <p className="pull-right">R$ {cartSubtotal}</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
