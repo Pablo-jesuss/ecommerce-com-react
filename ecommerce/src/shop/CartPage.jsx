@@ -199,6 +199,18 @@ const CartPage = () => {
                           </span>
                           <p className="pull-right">R$ {cartSubtotal}</p>
                         </li>
+
+                        <li>
+                          <span className="pull-left">Envio</span>
+                          <p className="pull-right">Frete grátis</p>
+                        </li>
+
+                        <li>
+                          <span className="pull-left">Total de pedidos</span>
+                          <p className="pull-right">
+                            R$ {orderTotal.toFixed(2)}
+                          </p>
+                        </li>
                       </ul>
                     </div>
                   </div>
