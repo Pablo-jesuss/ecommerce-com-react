@@ -83,7 +83,13 @@ const CheckOutPage = () => {
                     className={`tab-pane fade ${
                       activeTab === "visa" ? "show active" : ""
                     }`}
-                  ></div>
+                    id="visa"
+                    role="tabpanel"
+                    aria-labelledby="visa-tab"
+                  >
+                    {/* visa tab content */}
+                    <div className="mt-4 mx-4"></div>
+                  </div>
                   {/* paypal content */}
                 </div>
               </div>
