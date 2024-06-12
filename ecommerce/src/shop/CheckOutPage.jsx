@@ -92,6 +92,30 @@ const CheckOutPage = () => {
                       <div className="text-center">
                         <h5>Cartão de crédito</h5>
                       </div>
+                      <div className="form mt-3">
+                        <div className="inputbox">
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            className="form-control"
+                            required
+                          />
+                          <span>Nome do Titular</span>
+                        </div>
+                        <div className="inputbox">
+                          <input
+                            type="text"
+                            name="number"
+                            id="number"
+                            min="1"
+                            max="999"
+                            className="form-control"
+                            required
+                          />
+                          <span>Número do cartão</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   {/* paypal content */}
