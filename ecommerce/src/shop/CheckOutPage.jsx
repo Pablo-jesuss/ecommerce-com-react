@@ -88,7 +88,11 @@ const CheckOutPage = () => {
                     aria-labelledby="visa-tab"
                   >
                     {/* visa tab content */}
-                    <div className="mt-4 mx-4"></div>
+                    <div className="mt-4 mx-4">
+                      <div className="text-center">
+                        <h5>Cartão de crédito</h5>
+                      </div>
+                    </div>
                   </div>
                   {/* paypal content */}
                 </div>
