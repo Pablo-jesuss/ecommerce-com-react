@@ -114,6 +114,36 @@ const CheckOutPage = () => {
                             required
                           />
                           <span>Número do cartão</span>
+                          <i className="fa fa-eye"></i>
+                        </div>
+                        <div className="d-flex flex-row">
+                          <div className="inputbox">
+                            <input
+                              type="text"
+                              name="number"
+                              id="number"
+                              min="1"
+                              max="999"
+                              className="form-control"
+                              required
+                            />
+                            <span>Data de validade</span>
+                          </div>
+                          <div className="inputbox">
+                            <input
+                              type="text"
+                              name="number"
+                              id="number"
+                              min="1"
+                              max="999"
+                              className="form-control"
+                              required
+                            />
+                            <span>CVV</span>
+                          </div>
+                        </div>
+                        <div className="px-5 pay">
+                          <button></button>
                         </div>
                       </div>
                     </div>
