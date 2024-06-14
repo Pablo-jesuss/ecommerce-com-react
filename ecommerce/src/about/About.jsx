@@ -1,4 +1,5 @@
 import React from "react";
+import PageHeader from "../components/PageHeader";
 
 const subTitle = "Sobre nossa marca";
 const title = "Serviços de boa qualificação e melhores experiências";
@@ -30,7 +31,26 @@ const aboutList = [
 ];
 
 const About = () => {
-  return <div></div>;
+  return (
+    <div>
+      <PageHeader title={"Sobre nossa marca"} curPage={"About"} />
+      <div className="about-section style-3 padding-tb section-bg">
+        <div className="container">
+          <div className="row justify-content-center row-cols-1 align-items-center">
+            <div className="col">
+              <div className="about-left">
+                <div className="about-thumb">
+                  <img src="src/assets/images/about/01.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            {/* 2nd col */}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default About;
