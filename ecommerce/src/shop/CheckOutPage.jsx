@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/modal.css";
 
 const CheckOutPage = () => {
   const [show, setShow] = useState(false);
@@ -151,6 +152,63 @@ const CheckOutPage = () => {
                     </div>
                   </div>
                   {/* paypal content */}
+                  <div
+                    className={`tab-pane fade ${
+                      activeTab === "paypal" ? "show active" : ""
+                    }`}
+                    id="paypal"
+                    role="tabpanel"
+                    aria-labelledby="paypal-tab"
+                  >
+                    {/* paypal tab content */}
+                    <div className="mt-4 mx-4">
+                      <div className="text-center">
+                        <h5>Informações da conta paypal</h5>
+                      </div>
+                      <div className="form mt-3">
+                        <div className="inputbox">
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            className="form-control"
+                            required
+                          />
+                          <span>Digite seu e-mail</span>
+                        </div>
+                        <div className="inputbox">
+                          <input
+                            type="text"
+                            name="number"
+                            id="number"
+                            min="1"
+                            max="999"
+                            className="form-control"
+                            required
+                          />
+                          <span>Seu nome</span>
+                        </div>
+                        <div className="inputbox">
+                          <input
+                            type="text"
+                            name="number"
+                            id="number"
+                            min="1"
+                            max="999"
+                            className="form-control"
+                            required
+                          />
+                          <span>Informação extra</span>
+                        </div>
+
+                        <div className="px-5 pay">
+                          <button className="btn btn-success btn-block">
+                            Adicionar Paypal
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
