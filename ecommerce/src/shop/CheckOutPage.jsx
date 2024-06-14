@@ -143,7 +143,9 @@ const CheckOutPage = () => {
                           </div>
                         </div>
                         <div className="px-5 pay">
-                          <button></button>
+                          <button className="btn btn-success btn-block">
+                            Adicionar cartão
+                          </button>
                         </div>
                       </div>
                     </div>
