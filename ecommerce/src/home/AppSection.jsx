@@ -7,11 +7,14 @@ const desc =
   "Faça compras em qualquer dispositivo com nosso aplicativo e saiba o que quiser o tempo todo. Basta baixar e instalar e começar a aprender.";
 
 const AppSection = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="app-section padding-tb">
       <div className="container">
         <div className="section-header text-center">
-          <Link to="/sign-up" className="lab-btn mb-4">
+          <Link to="/sign-up" className="lab-btn mb-4" onClick={handleClick}>
             {btnText}
           </Link>
           <h2 className="title">{title}</h2>

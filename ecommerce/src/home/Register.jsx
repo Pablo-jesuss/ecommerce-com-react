@@ -11,6 +11,10 @@ const title = (
 const desc = "Tempo limitado de oferta! se apresse";
 
 const Register = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="register-section padding-tb pb-0">
       <div className="container">
@@ -49,7 +53,7 @@ const Register = () => {
                   className="reg-input"
                 />
 
-                <button type="submit" className="lab-btn">
+                <button type="submit" className="lab-btn" onClick={handleClick}>
                   Registrar agora
                 </button>
               </form>

@@ -27,6 +27,10 @@ const countList = [
 ];
 
 const AboutUs = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="instructor-section style-2 padding-tb section-bg-ash">
       <div className="container">
@@ -58,7 +62,7 @@ const AboutUs = () => {
                 <span className="subtitle">{subTitle}</span>
                 <h2 className="title">{title}</h2>
                 <p>{desc}</p>
-                <Link to="/sign-up" className="lab-btn">
+                <Link to="/sign-up" className="lab-btn" onClick={handleClick}>
                   {btnText}
                 </Link>
               </div>
