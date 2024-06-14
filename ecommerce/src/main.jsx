@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./home/Home.jsx";
-import Blog from "./blog/Blog.jsx";
+
 import "./index.css";
 
 import "swiper/css";
@@ -21,6 +21,7 @@ import Shop from "./shop/Shop.jsx";
 import AboutUs from "./home/AboutUs.jsx";
 import SingleProduct from "./shop/SingleProduct.jsx";
 import CartPage from "./shop/CartPage.jsx";
+import About from "./about/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,18 +32,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "/blog",
-        element: <Blog />,
-      },
+
       {
         path: "/shop",
         element: <Shop />,
       },
-      {
-        path: "/about",
-        element: <AboutUs />,
-      },
+
       {
         path: "shop/:id",
         element: <SingleProduct />,
@@ -50,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/cart-page",
         element: <CartPage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
