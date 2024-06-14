@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
+import { useLocation, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/modal.css";
 
@@ -13,6 +14,17 @@ const CheckOutPage = () => {
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
+
+  // direct to home page
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
+
+  const handleOrderConfirm = () => {
+    alert("Seu pedido foi realizado com sucesso!");
+    localStorage.removeItem("cart");
+    navigate(from, { replace: true });
+  };
 
   return (
     <div className="modalCart">
@@ -144,7 +156,10 @@ const CheckOutPage = () => {
                           </div>
                         </div>
                         <div className="px-5 pay">
-                          <button className="btn btn-success btn-block">
+                          <button
+                            className="btn btn-success btn-block"
+                            onClick={handleOrderConfirm}
+                          >
                             Adicionar cartão
                           </button>
                         </div>
@@ -188,21 +203,26 @@ const CheckOutPage = () => {
                           />
                           <span>Seu nome</span>
                         </div>
-                        <div className="inputbox">
-                          <input
-                            type="text"
-                            name="number"
-                            id="number"
-                            min="1"
-                            max="999"
-                            className="form-control"
-                            required
-                          />
-                          <span>Informação extra</span>
+                        <div className="d-flex flex-row">
+                          <div className="inputbox">
+                            <input
+                              type="text"
+                              name="number"
+                              id="number"
+                              min="1"
+                              max="999"
+                              className="form-control"
+                              required
+                            />
+                            <span>Informação extra</span>
+                          </div>
                         </div>
 
                         <div className="px-5 pay">
-                          <button className="btn btn-success btn-block">
+                          <button
+                            className="btn btn-success btn-block"
+                            onClick={handleOrderConfirm}
+                          >
                             Adicionar Paypal
                           </button>
                         </div>
@@ -210,6 +230,13 @@ const CheckOutPage = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* payment desclaimer */}
+                <p className="mt-3 px-4 p-Disclaimer">
+                  Isenção de responsabilidade de pagamento: Em nenhum caso o
+                  pagamento ou pagamento parcial pelo proprietário de qualquer
+                  material ou serviço
+                </p>
               </div>
             </div>
           </div>
