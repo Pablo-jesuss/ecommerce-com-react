@@ -18,10 +18,11 @@ import "././assets/css/style.min.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Shop from "./shop/Shop.jsx";
-import AboutUs from "./home/AboutUs.jsx";
+
 import SingleProduct from "./shop/SingleProduct.jsx";
 import CartPage from "./shop/CartPage.jsx";
 import About from "./about/About.jsx";
+import Contact from "./contactPage/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -42,13 +43,20 @@ const router = createBrowserRouter([
         path: "shop/:id",
         element: <SingleProduct />,
       },
+
       {
         path: "/cart-page",
         element: <CartPage />,
       },
+
       {
         path: "/about",
         element: <About />,
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

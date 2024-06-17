@@ -6,7 +6,7 @@ const title = "Serviços de boa qualificação e melhores experiências";
 const desc =
   "Fornece acesso distinto aos usuários, enquanto processos transparentes, alguns incentivam funcionalidades eficientes, em vez de arquitetura extensível, comunicam serviços alavancados e multiplataforma.";
 
-const year = "30+";
+const year = "40+";
 const expareance = "Anos de experiências";
 
 const aboutList = [
