@@ -13,19 +13,19 @@ const aboutList = [
   {
     imgUrl: "/src/assets/images/about/icon/01.jpg",
     imgAlt: "about icon rajibraj91 rajibraj",
-    title: "Skilled Instructors",
+    title: "Instrutores qualificados",
     desc: "Fornecer acesso diferenciado aos usuários enquanto comunica serviços alavancados",
   },
   {
     imgUrl: "/src/assets/images/about/icon/02.jpg",
     imgAlt: "about icon rajibraj91 rajibraj",
-    title: "Get Certificate",
+    title: "Obter certificado",
     desc: "Fornecer acesso diferenciado aos usuários enquanto comunica serviços alavancados",
   },
   {
     imgUrl: "/src/assets/images/about/icon/03.jpg",
     imgAlt: "about icon rajibraj91 rajibraj",
-    title: "Online Classes",
+    title: "Aulas on-line",
     desc: "Fornecer acesso diferenciado aos usuários enquanto comunica serviços alavancados",
   },
 ];
@@ -65,7 +65,13 @@ const About = () => {
                   <ul className="lab-ul">
                     {aboutList.map((val, i) => (
                       <li key={i}>
-                        <div></div>
+                        <div className="sr-left">
+                          <img src={val.imgUrl} alt="" />
+                        </div>
+                        <div className="sr-right">
+                          <h5>{val.title}</h5>
+                          <p>{val.desc}</p>
+                        </div>
                       </li>
                     ))}
                   </ul>
