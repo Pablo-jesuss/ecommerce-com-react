@@ -42,6 +42,13 @@ const About = () => {
                 <div className="about-thumb">
                   <img src="src/assets/images/about/01.png" alt="" />
                 </div>
+                <div className="abs-thumb">
+                  <img src="src/assets/images/about/02.jpg" alt="" />
+                </div>
+                <div className="about-left-content">
+                  <h3>{year}</h3>
+                  <p>{expareance}</p>
+                </div>
               </div>
             </div>
 
