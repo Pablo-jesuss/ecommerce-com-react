@@ -40,7 +40,7 @@ const About = () => {
             <div className="col">
               <div className="about-left">
                 <div className="about-thumb">
-                  <img src="src/assets/images/about/01.png" alt="" />
+                  <img src="src/assets/images/about/01.jpg" alt="" />
                 </div>
                 <div className="abs-thumb">
                   <img src="src/assets/images/about/02.jpg" alt="" />
@@ -59,6 +59,16 @@ const About = () => {
                   <span className="subtitle">{subTitle}</span>
                   <h2 className="title">{title}</h2>
                   <p>{desc}</p>
+                </div>
+
+                <div className="section-wrapper">
+                  <ul className="lab-ul">
+                    {aboutList.map((val, i) => (
+                      <li key={i}>
+                        <div></div>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
