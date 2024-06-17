@@ -53,6 +53,15 @@ const About = () => {
             </div>
 
             {/* 2nd col */}
+            <div className="col">
+              <div className="about-right">
+                <div className="section-header">
+                  <span className="subtitle">{subTitle}</span>
+                  <h2 className="title">{title}</h2>
+                  <p>{desc}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
