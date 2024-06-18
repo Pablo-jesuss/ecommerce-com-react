@@ -43,6 +43,15 @@ const Contact = () => {
         <div className="container">
           <div className="section-header text-center">
             <span className="subtitle">{subTitle}</span>
+            <h2 className="title">{title}</h2>
+          </div>
+
+          <div className="section-wrapper">
+            <div className="row flex-row-reverse">
+              <div className="col-xl-4 col-lg-5 col-12">
+                <div className="contact-wrapper"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
