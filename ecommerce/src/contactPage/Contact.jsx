@@ -12,26 +12,26 @@ const contactList = [
   {
     imgUrl: "/src/assets/images/icon/01.png",
     imgAlt: "contact icon",
-    title: "Office Address",
+    title: "Endereço do escritório",
     desc: "1201 park street, Fifth Avenue",
   },
   {
     imgUrl: "/src/assets/images/icon/02.png",
     imgAlt: "contact icon",
-    title: "Phone number",
+    title: "Número de telefone",
     desc: "+22698 745 632,02 982 745",
   },
   {
     imgUrl: "/src/assets/images/icon/03.png",
     imgAlt: "contact icon",
-    title: "Send email",
+    title: "Enviar email",
     desc: "admin@shopcart.com",
   },
   {
     imgUrl: "/src/assets/images/icon/04.png",
     imgAlt: "contact icon",
-    title: "Our website",
-    desc: "www.shopcart.com",
+    title: "Website",
+    desc: "www.ecommerce.com",
   },
 ];
 
@@ -49,7 +49,19 @@ const Contact = () => {
           <div className="section-wrapper">
             <div className="row flex-row-reverse">
               <div className="col-xl-4 col-lg-5 col-12">
-                <div className="contact-wrapper"></div>
+                <div className="contact-wrapper">
+                  {contactList.map((val, i) => (
+                    <div key={i} className="contact-item">
+                      <div className="contact-thumb">
+                        <img src={val.imgUrl} alt="" />
+                      </div>
+                      <div className="contact-content">
+                        <h6 className="title">{val.title}</h6>
+                        <p>{val.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
