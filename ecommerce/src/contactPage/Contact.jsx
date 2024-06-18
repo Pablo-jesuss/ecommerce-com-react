@@ -14,7 +14,7 @@ const contactList = [
     imgUrl: "/src/assets/images/icon/01.png",
     imgAlt: "contact icon",
     title: "Endereço do escritório",
-    desc: "1201 park street, Fifth Avenue",
+    desc: "1201 park, Rio de Janeiro",
   },
   {
     imgUrl: "/src/assets/images/icon/02.png",
@@ -71,6 +71,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="contact-section padding-tb">
+        <div className="container">
+          <div className="section-header text-center"></div>
         </div>
       </div>
     </div>
