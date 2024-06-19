@@ -76,7 +76,10 @@ const Contact = () => {
 
       <div className="contact-section padding-tb">
         <div className="container">
-          <div className="section-header text-center"></div>
+          <div className="section-header text-center">
+            <span className="subtitle">{conSubTitle}</span>
+            <h2>{conTitle}</h2>
+          </div>
         </div>
       </div>
     </div>
