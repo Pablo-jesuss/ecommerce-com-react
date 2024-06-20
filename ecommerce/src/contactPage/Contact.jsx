@@ -7,7 +7,7 @@ const title = "Estamos sempre ansiosos para ouvir de você!";
 const conSubTitle = "Entre em contato com Fale conosco";
 const conTitle =
   "Preencha o formulário abaixo para que possamos conhecer melhor você e suas necessidades.";
-const btnText = "Envie nossa mensagem";
+const btnText = "Envia mensagem";
 
 const contactList = [
   {
@@ -115,6 +115,20 @@ const Contact = () => {
                   id="subject"
                   placeholder="Assunto*"
                 />
+              </div>
+              <div className="form-group w-100">
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="8"
+                  placeholder="Sua mensagem"
+                ></textarea>
+              </div>
+
+              <div className="form-group w-100 text-center">
+                <button className="lab-btn">
+                  <span>{btnText}</span>
+                </button>
               </div>
             </form>
           </div>
