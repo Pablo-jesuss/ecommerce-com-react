@@ -25,7 +25,7 @@ const NavItems = () => {
         <div className="container">
           <div className="header-top-area">
             <Link to="/signup" className="lab-btn me-3">
-              <span>Create Accout</span>
+              <span>Criar uma conta</span>
             </Link>
             <Link to="/login">Login</Link>
           </div>

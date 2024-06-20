@@ -99,6 +99,23 @@ const Contact = () => {
                   placeholder="Seu Email*"
                 />
               </div>
+
+              <div className="form-group">
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  placeholder="Número de telefone*"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Assunto*"
+                />
+              </div>
             </form>
           </div>
         </div>
