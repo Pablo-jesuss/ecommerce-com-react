@@ -25,9 +25,11 @@ const NavItems = () => {
         <div className="container">
           <div className="header-top-area">
             <Link to="/signup" className="lab-btn me-3">
-              <span>Criar uma conta</span>
+              <span className="criar-spam">Criar uma conta</span>
             </Link>
-            <Link to="/login">Login</Link>
+            <Link className="lab-btn" to="/login">
+              Login
+            </Link>
           </div>
         </div>
       </div>
@@ -63,11 +65,15 @@ const NavItems = () => {
                 </ul>
               </div>
               {/* sign in & log in */}
-              <Link to="/sign-up" className="lab-btn me-3 d-md-block">
+              <Link to="/sign-up" className="lab-btn me-3 d-md-block d-none">
                 Criar uma conta
               </Link>
 
-              <Link to="/login" className="d-none d-md-block" id="log-in">
+              <Link
+                to="/login"
+                className="lab-btn me-3 d-md-block d-none"
+                id="log-in"
+              >
                 Login
               </Link>
 

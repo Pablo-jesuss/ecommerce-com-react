@@ -42,6 +42,10 @@
   color: blue;
 }
 
+.criar-spam {
+  color: white !important;
+}
+
 .lab-btn {
   background-color: rgb(1, 25, 243) !important;
   color: white !important;
