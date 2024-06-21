@@ -1,8 +1,22 @@
 import React from "react";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+const provider = new GoogleAuthProvider();
+const auth = getAuth();
 
 const LoginDemo = () => {
   const handleLogin = () => {
-    console.log();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        alert("Login realizado com sucesso");
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
   return (
     <div className="m-5 p-5">
