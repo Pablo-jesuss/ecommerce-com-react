@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../contexts/AuthProvider.jsx";
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -7,6 +8,7 @@ const NavItems = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
 
   // addevent listener
+  const { user } = useContext(AuthContext);
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
