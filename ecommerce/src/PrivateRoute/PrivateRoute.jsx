@@ -1,9 +1,19 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../contexts/AuthProvider";
+import { useLocation } from "react-router-dom";
 
-const PrivateRoute = () => {
+const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
-  return <div></div>;
+  const location = useLocation();
+
+  if (loading) {
+    return <div>Loading.....</div>;
+  }
+
+  if (user) {
+    return children;
+  }
+  return <div>Route</div>;
 };
 
 export default PrivateRoute;
