@@ -10,6 +10,8 @@ import CartPage from "./shop/CartPage.jsx";
 import About from "./about/About.jsx";
 import Contact from "./contactPage/Contact.jsx";
 import AuthProvider from "./contexts/AuthProvider.jsx";
+import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
+import Login from "./components/Login.jsx";
 
 import "./index.css";
 import "swiper/css";
@@ -38,7 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart-page",
-        element: <CartPage />,
+        element: (
+          <PrivateRoute>
+            <CartPage />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/about",
@@ -49,6 +55,10 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
