@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../contexts/AuthProvider";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const title = "Login";
 const socialTitle = "Faça login com mídia social";
@@ -18,7 +18,15 @@ const Login = () => {
   const [errorMessage, seterrorMessage] = useState("");
   const { signUpWithGmail, login } = useContext(AuthContext);
   const location = useLocation();
-  return <div></div>;
+  const navigat = useNavigate();
+
+  const from = location.state?.from?.pathname || "/";
+
+  return (
+    <div>
+      <div className="login-section padding-tb section-bg"></div>
+    </div>
+  );
 };
 
 export default Login;
