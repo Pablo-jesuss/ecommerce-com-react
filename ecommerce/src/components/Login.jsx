@@ -22,13 +22,19 @@ const Login = () => {
 
   const from = location.state?.from?.pathname || "/";
 
+  const handleLogin = (e) => {};
+
   return (
     <div>
       <div className="login-section padding-tb section-bg">
         <div className="container">
           <div className="account-wrapper">
             <h3 className="title">{title}</h3>
-            <form className="account-form"></form>
+            <form className="account-form" onSubmit={handleLogin}>
+              <div className="form-group">
+                <input type="email" name="" id="" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
