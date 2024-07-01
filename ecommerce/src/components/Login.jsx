@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../contexts/AuthProvider";
+import { useLocation } from "react-router-dom";
 
 const title = "Login";
 const socialTitle = "Faça login com mídia social";
+const btnText = "Conecte-se agora";
 
 const socialList = [
   { iconName: "icofont-facebook", siteLink: "#", className: "facebook" },
@@ -12,6 +15,9 @@ const socialList = [
 ];
 
 const Login = () => {
+  const [errorMessage, seterrorMessage] = useState("");
+  const { signUpWithGmail, login } = useContext(AuthContext);
+  const location = useLocation();
   return <div></div>;
 };
 
