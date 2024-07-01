@@ -24,7 +24,14 @@ const Login = () => {
 
   return (
     <div>
-      <div className="login-section padding-tb section-bg"></div>
+      <div className="login-section padding-tb section-bg">
+        <div className="container">
+          <div className="account-wrapper">
+            <h3 className="title">{title}</h3>
+            <form className="account-form"></form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
