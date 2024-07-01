@@ -32,7 +32,27 @@ const Login = () => {
             <h3 className="title">{title}</h3>
             <form className="account-form" onSubmit={handleLogin}>
               <div className="form-group">
-                <input type="email" name="" id="" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Endereço de email *"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Senha *"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <div></div>
               </div>
             </form>
           </div>
