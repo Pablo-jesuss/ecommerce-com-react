@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../contexts/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const title = "Login";
 const socialTitle = "Faça login com mídia social";
@@ -52,7 +53,13 @@ const Login = () => {
               </div>
 
               <div className="form-group">
-                <div></div>
+                <div>
+                  <div className="checkgroup">
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label htmlFor="remember">Lembre de mim</label>
+                  </div>
+                  <Link>Esqueceu a senha</Link>
+                </div>
               </div>
             </form>
           </div>
