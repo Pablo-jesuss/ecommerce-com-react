@@ -19,14 +19,32 @@ const Login = () => {
   const [errorMessage, seterrorMessage] = useState("");
   const { signUpWithGmail, login } = useContext(AuthContext);
   const location = useLocation();
-  const navigat = useNavigate();
+  const navigate = useNavigate();
 
   const from = location.state?.from?.pathname || "/";
 
-  const handleLogin = (e) => {};
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    login(email, password)
+      .then((result) => {
+        const user = result.user;
+        alert("Login successful!");
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        const errorMsg = error.errorMessage;
+        seterrorMessage("Forneça e-mail e senha válidos!");
+      });
+  };
+
+  const handleRegister = () => {};
 
   return (
-    <div>
+    <div className="login-section padding-tb section-bg">
       <div className="login-section padding-tb section-bg">
         <div className="container">
           <div className="account-wrapper">
@@ -81,7 +99,7 @@ const Login = () => {
               <h5 className="subtitle">{socialTitle}</h5>
               <ul className="lab-ul social-icons justify-content-center">
                 <li>
-                  <button className="github">
+                  <button className="github" onClick={handleRegister}>
                     <i className="icofont-github"></i>
                   </button>
                 </li>
@@ -95,6 +113,12 @@ const Login = () => {
                 <li>
                   <a href="/" className="pinterest">
                     <i className="icofont-pinterest"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/" className="twitter">
+                    <i className="icofont-twitter"></i>
                   </a>
                 </li>
 
