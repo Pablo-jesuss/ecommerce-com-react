@@ -79,7 +79,37 @@ const Login = () => {
 
               {/* social login */}
               <h5 className="subtitle">{socialTitle}</h5>
-              <ul className="lab-ul social-icons justify-content-center">{}</ul>
+              <ul className="lab-ul social-icons justify-content-center">
+                <li>
+                  <button className="github">
+                    <i className="icofont-github"></i>
+                  </button>
+                </li>
+
+                <li>
+                  <a href="/" className="linkedin">
+                    <i className="icofont-linkedin"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/" className="pinterest">
+                    <i className="icofont-pinterest"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/" className="instagram">
+                    <i className="icofont-instagram"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/" className="facebook">
+                    <i className="icofont-facebook"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
