@@ -76,6 +76,10 @@ const Login = () => {
               <span className="or">
                 <span>or</span>
               </span>
+
+              {/* social login */}
+              <h5 className="subtitle">{socialTitle}</h5>
+              <ul className="lab-ul social-icons justify-content-center">{}</ul>
             </div>
           </div>
         </div>
