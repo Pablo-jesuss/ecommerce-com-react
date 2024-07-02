@@ -53,15 +53,30 @@ const Login = () => {
               </div>
 
               <div className="form-group">
-                <div>
+                <div className="d-flex justify-content-between flex-wrap pt-sm-2">
                   <div className="checkgroup">
                     <input type="checkbox" name="remember" id="remember" />
                     <label htmlFor="remember">Lembre de mim</label>
                   </div>
-                  <Link>Esqueceu a senha</Link>
+                  <Link to="/forgetpass">Esqueceu a senha?</Link>
                 </div>
               </div>
+              <div className="form-group">
+                <button className="d-block lab-btn">
+                  <span>{btnText}</span>
+                </button>
+              </div>
             </form>
+
+            {/* account bottom */}
+            <div className="account-bottom">
+              <span className="d-block cate pt-10">
+                Não tenho uma conta? <Link to="/sing-up">Assine você</Link>
+              </span>
+              <span className="or">
+                <span>or</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
