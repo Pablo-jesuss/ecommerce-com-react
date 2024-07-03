@@ -70,6 +70,16 @@ const Login = () => {
                 />
               </div>
 
+              {/* showing message */}
+
+              <div>
+                {errorMessage && (
+                  <div className="error-message text-danger">
+                    {errorMessage}
+                  </div>
+                )}
+              </div>
+
               <div className="form-group">
                 <div className="d-flex justify-content-between flex-wrap pt-sm-2">
                   <div className="checkgroup">
