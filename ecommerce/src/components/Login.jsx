@@ -41,7 +41,11 @@ const Login = () => {
       });
   };
 
-  const handleRegister = () => {};
+  const handleRegister = () => {
+    signUpWithGmail().then((result) => {
+      const user = result.user;
+    });
+  };
 
   return (
     <div className="login-section padding-tb section-bg">
