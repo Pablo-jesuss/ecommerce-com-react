@@ -42,9 +42,15 @@ const Login = () => {
   };
 
   const handleRegister = () => {
-    signUpWithGmail().then((result) => {
-      const user = result.user;
-    });
+    signUpWithGmail()
+      .then((result) => {
+        const user = result.user;
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        const errorMsg = error.errorMessage;
+        seterrorMessage("Forneça e-mail e senha válidos!");
+      });
   };
 
   return (
