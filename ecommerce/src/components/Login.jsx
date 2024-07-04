@@ -109,7 +109,7 @@ const Login = () => {
             {/* account bottom */}
             <div className="account-bottom">
               <span className="d-block cate pt-10">
-                Não tenho uma conta? <Link to="/sing-up">Assine você</Link>
+                Não tenho uma conta? <Link to="/sign-up">Assine você</Link>
               </span>
               <span className="or">
                 <span>or</span>

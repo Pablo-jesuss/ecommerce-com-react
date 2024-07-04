@@ -26,7 +26,7 @@ const NavItems = () => {
       <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
         <div className="container">
           <div className="header-top-area">
-            <Link to="/signup" className="lab-btn me-3">
+            <Link to="/sign-up" className="lab-btn me-3">
               <span className="criar-spam">Criar uma conta</span>
             </Link>
             <Link className="lab-btn" to="/login">
