@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../contexts/AuthProvider";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const title = "Cadastre-se";
@@ -7,8 +9,23 @@ const btnText = "Inscreva-se agora";
 
 const Signup = () => {
   const [errorMessage, seterrorMessage] = useState("");
+  const { signUpWithGmail, login } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const handleRegister = () => {};
+  const from = location.state?.from?.pathname || "/";
+
+  const handleRegister = () => {
+    signUpWithGmail()
+      .then((result) => {
+        const user = result.user;
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        const errorMsg = error.errorMessage;
+        seterrorMessage("Forneça e-mail e senha válidos!");
+      });
+  };
   const handleSignup = (event) => {};
   return (
     <div className="login-section padding-tb section-bg">
@@ -77,7 +94,7 @@ const Signup = () => {
             {/* account bottom */}
             <div className="account-bottom">
               <span className="d-block cate pt-10">
-                Tenho uma conta? <Link to="/login">Assine você</Link>
+                Tenho uma conta? <Link to="/login">Login</Link>
               </span>
               <span className="or">
                 <span>or</span>
