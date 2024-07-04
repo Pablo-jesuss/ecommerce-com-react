@@ -8,14 +8,25 @@ const btnText = "Inscreva-se agora";
 const Signup = () => {
   const [errorMessage, seterrorMessage] = useState("");
 
-  const handleRegister = (event) => {};
+  const handleRegister = () => {};
+  const handleSignup = (event) => {};
   return (
     <div className="login-section padding-tb section-bg">
       <div className="login-section padding-tb section-bg">
         <div className="container">
           <div className="account-wrapper">
             <h3 className="title">{title}</h3>
-            <form className="account-form" onSubmit={handleLogin}>
+            <form className="account-form" onSubmit={handleSignup}>
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome completo *"
+                  required
+                />
+              </div>
+
               <div className="form-group">
                 <input
                   type="email"
@@ -32,6 +43,16 @@ const Signup = () => {
                   name="password"
                   id="password"
                   placeholder="Senha *"
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  placeholder="Confirme sua senha *"
                   required
                 />
               </div>
