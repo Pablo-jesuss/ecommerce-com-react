@@ -9,7 +9,7 @@ const btnText = "Inscreva-se agora";
 
 const Signup = () => {
   const [errorMessage, seterrorMessage] = useState("");
-  const { signUpWithGmail, login } = useContext(AuthContext);
+  const { signUpWithGmail, createUser } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -26,7 +26,30 @@ const Signup = () => {
         seterrorMessage("Forneça e-mail e senha válidos!");
       });
   };
-  const handleSignup = (event) => {};
+  const handleSignup = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirmPassword = form.confirmPassword.value;
+
+    if (password !== confirmPassword) {
+      seterrorMessage(
+        "A senha não corresponde! Por favor, forneça uma senha correta!"
+      );
+    } else {
+      seterrorMessage("");
+      createUser(password, email)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          alert("Conta criada concluída com sucesso!!!");
+          navigate(from, { replace: true });
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
+    }
+  };
   return (
     <div className="login-section padding-tb section-bg">
       <div className="login-section padding-tb section-bg">

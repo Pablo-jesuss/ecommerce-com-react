@@ -96,7 +96,7 @@ const Login = () => {
                     <input type="checkbox" name="remember" id="remember" />
                     <label htmlFor="remember">Lembre de mim</label>
                   </div>
-                  <Link to="/forgetpass">Esqueceu a senha?</Link>
+                  <Link to="">Esqueceu a senha?</Link>
                 </div>
               </div>
               <div className="form-group">
