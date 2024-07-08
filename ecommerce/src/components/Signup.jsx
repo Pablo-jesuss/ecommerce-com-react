@@ -39,7 +39,7 @@ const Signup = () => {
       );
     } else {
       seterrorMessage("");
-      createUser(password, email)
+      createUser(email, password)
         .then((userCredential) => {
           const user = userCredential.user;
           alert("Conta criada concluída com sucesso!!!");
@@ -47,6 +47,7 @@ const Signup = () => {
         })
         .catch((error) => {
           console.log(error.message);
+          alert(`${error.message}`);
         });
     }
   };
